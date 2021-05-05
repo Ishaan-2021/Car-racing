@@ -76,6 +76,16 @@ if(keyPressed=="68")
    car2right();
    console.log("car2right");    
 }
+if(rover_x>700)
+{
+console.log("car1 won");
+document.getElementById("game_status").innerHTML="car 1 won!";  
+}
+if(car_x>700)
+{
+console.log("car2 won");
+document.getElementById("game_status").innerHTML="car 2 won!";  
+}
 }
 function up(){
    if(rover_y>=0)
